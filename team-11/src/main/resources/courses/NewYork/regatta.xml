@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RegattaConfig>
+    <RegattaID>28</RegattaID>
+    <RegattaName>New York Series 2017</RegattaName>
+    <CourseName>New York</CourseName>
+    <CentralLatitude>41.8924</CentralLatitude>
+    <CentralLongitude>-87.5989</CentralLongitude>
+    <CentralAltitude>0.00</CentralAltitude>
+    <UtcOffset>-5</UtcOffset>
+    <MagneticVariation>-3.9</MagneticVariation>
+    <ShorelineName>New York</ShorelineName>
+</RegattaConfig>

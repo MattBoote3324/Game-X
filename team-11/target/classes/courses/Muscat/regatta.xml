@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RegattaConfig>
+  <RegattaID>26</RegattaID>
+  <RegattaName>Oman World Series 2016</RegattaName>
+  <CourseName>Oman</CourseName>
+  <CentralLatitude>23.6145</CentralLatitude>
+  <CentralLongitude>58.304826</CentralLongitude>
+  <CentralAltitude>0</CentralAltitude>
+  <UtcOffset>4</UtcOffset>
+  <MagneticVariation>1.37</MagneticVariation>
+  <ShorelineName>oman_shoreline</ShorelineName>
+</RegattaConfig>

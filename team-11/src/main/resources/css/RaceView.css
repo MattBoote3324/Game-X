@@ -1,0 +1,211 @@
+/*
+ * This is an adjustment of the original modena.css for a consistent dark theme.
+ * Original modena.css here: https://gist.github.com/maxd/63691840fc372f22f470.
+ */
+
+.animated-option-button {
+    -fx-pref-width: 180px;
+    -fx-background-color: #000000;
+    -fx-pref-height: 35px;
+    -fx-text-fill: white;
+    -fx-background-radius: 6px;
+    /*-fx-border-color: WHITE;*/
+    /*-fx-border-radius: 4px;*/
+    /*-fx-border-width: 3px;*/
+    -fx-opacity: 70%;
+}
+
+@font-face {
+    font-family: "Friz Quadrata TT";
+    src: url('FrizQuadrataTT.ttf');
+}
+
+.label, .text-input, .text-field, .button {
+    -fx-font-family: "Friz Quadrata TT";
+    -fx-text-fill: "#FFCC00";
+}
+
+.animated-option-button-toggled {
+    -fx-pref-width: 180px;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-pref-height: 35px;
+    -fx-background-radius: 6px;
+    /*-fx-border-color: black;*/
+    /*-fx-border-radius: 4px;*/
+    /*-fx-border-width: 3px;*/
+    -fx-opacity: 70%;
+}
+
+
+.animated-custom-button {
+    -fx-pref-width: 180px;
+
+    -fx-background-color: rgb(69, 147, 164);
+    -fx-background-radius: 6px;
+    -fx-pref-height: 35px;
+    -fx-text-fill: white;
+    /*-fx-border-color: white;*/
+    /*-fx-border-radius: 4px;*/
+    /*-fx-border-width: 3px;*/
+    -fx-opacity: 70%;
+}
+
+.animated-custom-button:checked  {
+    -fx-pref-width: 180px;
+    -fx-background-color: rgb(129, 207, 224);
+    -fx-text-fill: white;
+    -fx-background-radius: 6px;
+    -fx-pref-height: 35px;
+    /*-fx-border-color: black;*/
+    /*-fx-border-radius: 4px;*/
+    /*-fx-border-width: 3px;*/
+    -fx-opacity: 90%;
+}
+
+.animated-custom-button:hover {
+    /*-fx-pref-width: 200px;*/
+    /*-fx-background-color: rgb(129, 207, 224);*/
+
+    /*-fx-text-fill: white;*/
+    /*-fx-background-radius: 6px;*/
+    /*-fx-pref-height: 35px;*/
+    /*-fx-border-color: black;*/
+    /*-fx-border-radius: 4px;*/
+    /*-fx-border-width: 3px;*/
+    -fx-opacity: 90%;
+}
+
+
+
+/* Redefine base colors */
+.root {
+    -fx-base: rgb(50, 50, 50);
+    -fx-background: rgb(50, 50, 50);
+
+    /* make controls (buttons, thumb, etc.) slightly lighter */
+    -fx-color: derive(-fx-base, 10%);
+
+    /* text fields and table rows background */
+    -fx-control-inner-background: rgba(20, 20, 20, 0);
+    /* version of -fx-control-inner-background for alternative rows */
+    -fx-control-inner-background-alt: derive(-fx-control-inner-background, 2.5%);
+
+    /* text colors depending on background's brightness */
+    -fx-light-text-color: rgb(220, 220, 220);
+    -fx-mid-text-color: rgb(100, 100, 100);
+    -fx-dark-text-color: rgb(20, 20, 20);
+
+    /* A bright blue for highlighting/accenting objects.  For example: selected
+     * text; selected items in menus, lists, trees, and tables; progress bars */
+    -fx-accent: rgb(0, 80, 100);
+
+    /* color of non-focused yet selected elements */
+    -fx-selection-bar-non-focused: rgb(50, 50, 50);
+}
+
+
+/* Fix derived prompt color for text fields */
+.text-input {
+    /* -fx-prompt-text-fill: derive(-fx-control-inner-background, +50%); */
+    /* Prompt text is gray */
+    -fx-prompt-text-fill: gray;
+}
+
+/*.text {*/
+    /*-fx-text-fill: rgb(220, 220, 220);*/
+/*}*/
+
+/* Keep prompt invisible when focused (above color fix overrides it) */
+.text-input:focused {
+    /*-fx-prompt-text-fill: transparent; */
+}
+
+/* Fix scroll bar buttons arrows colors */
+.scroll-bar > .increment-button > .increment-arrow,
+.scroll-bar > .decrement-button > .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, rgb(220, 220, 220);
+}
+
+.scroll-bar > .increment-button:hover > .increment-arrow,
+.scroll-bar > .decrement-button:hover > .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, rgb(240, 240, 240);
+}
+
+.scroll-bar > .increment-button:pressed > .increment-arrow,
+.scroll-bar > .decrement-button:pressed > .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, rgb(255, 255, 255);
+}
+
+.black-text{
+    -fx-text-fill: BLACK;
+}
+
+.remove-css{
+    -fx-base: rgb(255, 255, 255);
+    -fx-background: rgb(255, 255, 255);
+}
+
+.table-view{
+    -fx-opacity: 70%;
+}
+
+#button_icon {
+    -fx-background-color:  rgb(129, 207, 224);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-opacity: 70%;
+}
+
+.button-icon-annotation{
+    -fx-background-color:  rgb(0, 0, 65);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: #FFCC00;
+    -fx-opacity: 70%;
+    /*-fx-font-family: "Gamex";*/
+    -fx-font-size: 20;
+
+
+}
+
+#round-red-outline {
+    /*-fx-background-color: linear-gradient(#cc0000, #800000);*/
+    -fx-background-color: rgb(129, 207, 224);
+    /*-fx-background-radius: 30;*/
+    /*-fx-background-insets: 0;*/
+    -fx-text-fill: white;
+    /*-fx-border-insets: 50px, 50px, 50px, 50px;*/
+    /*-fx-border-radius: 30;*/
+    /*-fx-border-width: 5px;*/
+    -fx-opacity: 70%;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.god-description{
+    -fx-background-color: black;
+    -fx-opacity: 80%;
+    -fx-background-radius: 6;
+}
+
+.god-title{
+    -fx-opacity: 80%;
+    -fx-background-color: black;
+    -fx-background-radius: 6;
+
+}
+
+.placingText {
+    -fx-font-size: 81;
+}
+
+/* These buttons should be 40x40 */
+.back_button {
+    -fx-background-image: url("../images/back_button.png");
+    -fx-background-size: cover;
+    -fx-font-size: 12px;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}

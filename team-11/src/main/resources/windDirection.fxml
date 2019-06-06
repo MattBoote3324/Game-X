@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" stylesheets="@css/RaceView.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng302.Client.Controllers.WindDirectionController">
+   <children>
+            <VBox fx:id="compassVBox" alignment="CENTER" maxWidth="100.0" minWidth="100.0" pickOnBounds="false" prefWidth="100.0" style="-fx-background-color: rgb(0,0,0,0.05);">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="N" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Pane>
+                     <children>
+                        <ImageView fitHeight="103.0" fitWidth="86.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" x="7.0">
+                           <image>
+                              <Image url="@images/compass.png" />
+                           </image>
+                        </ImageView>
+                        <Group fx:id="windArrow" layoutY="5.0">
+                           <children>
+                              <Line endX="-90.0" endY="20.0" layoutX="150.0" layoutY="22.0" startX="-100.0" stroke="#ffcc00" strokeWidth="3.0" />
+                              <Line endX="-110.0" endY="20.0" layoutX="150.0" layoutY="22.0" startX="-100.0" stroke="#ffcc00" strokeWidth="3.0" />
+                              <Line fx:id="windLine" endY="30.0" layoutX="50.0" layoutY="63.0" startY="-35.0" stroke="#ffcc00" strokeWidth="3.0" />
+                           </children>
+                        </Group>
+                     </children>
+                  </Pane>
+                  <Label fx:id="windSpeedLabel" text="Wind Speed" />
+            <Label fx:id="fpsLabel" text="Frame Rate" visible="true" />
+               </children>
+            </VBox>
+   </children>
+</Pane>

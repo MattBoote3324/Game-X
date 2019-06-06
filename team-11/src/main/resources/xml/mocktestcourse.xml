@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Race>
+    <CreationTimeDate>2015-08-29T13:12:40+02:00</CreationTimeDate>
+    <RaceStartTime Start="2015-08-29T13:10:00+02:00" Postpone="False" />
+    <RaceID>15082901</RaceID>
+    <RaceType>Fleet</RaceType>
+    <Participants>
+        <Yacht SourceID="001" />
+        <Yacht SourceID="002" />
+        <Yacht SourceID="003" />
+        <Yacht SourceID="004" />
+        <Yacht SourceID="005" />
+        <Yacht SourceID="006" />
+    </Participants>
+    <Course>
+        <CompoundMark CompoundMarkID="1" Name="Mark0">
+            <Mark SeqID="1" Name="Mark0" TargetLat="32.296577" TargetLng="-64.854304" SourceID="122" />
+            <Mark SeqID="2" Name="Mark0" TargetLat="32.293771" TargetLng="-64.855242" SourceID="123" />
+        </CompoundMark>
+        <CompoundMark CompoundMarkID="2" Name="Mark1">
+            <Mark SeqID="1" Name="Mark1" TargetLat="32.293039" TargetLng="-64.843983" SourceID="131" />
+        </CompoundMark>
+    </Course>
+    <CompoundMarkSequence>
+        <Corner SeqID="1" CompoundMarkID="1" Rounding="PS" ZoneSize="3" />
+        <Corner SeqID="2" CompoundMarkID="2" Rounding="Port" ZoneSize="3" />
+    </CompoundMarkSequence>
+</Race>
+

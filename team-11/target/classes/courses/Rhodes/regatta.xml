@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RegattaConfig>
+  <RegattaID>31</RegattaID>
+  <RegattaName>Fukuoka World Series 2016</RegattaName>
+  <CourseName>Fukuoka</CourseName>
+  <CentralLatitude>33.596465</CentralLatitude>
+  <CentralLongitude>130.359757</CentralLongitude>
+  <CentralAltitude>0.00</CentralAltitude>
+  <UtcOffset>9</UtcOffset>
+  <MagneticVariation>-7.4</MagneticVariation>
+  <ShorelineName>fukuoka_shoreline</ShorelineName>
+</RegattaConfig>

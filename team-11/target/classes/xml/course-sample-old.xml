@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Course>
+    <version>1.0</version>
+
+    <object type="start">
+        <name>Start line</name>
+        <id>0</id>
+        <lat1>32.296577</lat1>
+        <long1>-64.854304</long1>
+        <lat2>32.293771</lat2>
+        <long2>-64.855242</long2>
+    </object>
+    <object type="mark">
+        <name>Mark</name>
+        <id>1</id>
+        <latitude>32.293039</latitude>
+        <long>-64.843983</long>
+    </object>
+    <object type="gate">
+        <name>Southern gate</name>
+        <id>2</id>
+        <lat1>32.284680</lat1>
+        <long1>-64.850045</long1>
+        <lat2>32.280164</lat2>
+        <long2>-64.847591</long2>
+    </object>
+    <object type="gate">
+        <name>Northern gate</name>
+        <id>3</id>
+        <lat1>32.309693</lat1>
+        <long1>-64.835249</long1>
+        <lat2>32.308046</lat2>
+        <long2>-64.831785</long2>
+    </object>
+    <object type="boundary point">
+        <lat1>32.3179743</lat1>
+        <long1>-64.8401338</long1>
+    </object>
+    <object type="boundary point">
+        <lat1>32.3176797</lat1>
+        <long1>-64.8356813</long1>
+    </object>
+    <object type="boundary point">
+        <lat1>32.3057786</lat1>
+        <long1>-64.8249149</long1>
+    </object>
+    <object type="boundary point">
+        <lat1>32.277917</lat1>
+        <long1>-64.8459435</long1>
+    </object>
+    <object type="boundary point">
+        <lat1>32.2781347</lat1>
+        <long1>-64.8521233</long1>
+    </object>
+    <object type="boundary point">
+        <lat1>32.2906154</lat1>
+        <long1>-64.8546982</long1>
+    </object>
+    <object type="boundary point">
+        <lat1>32.2918852</lat1>
+        <long1>-64.8609638</long1>
+    </object>
+    <object type="boundary point">
+        <lat1>32.299467</lat1>
+        <long1>-64.8575091</long1>
+    </object>
+    <object type = "boundary point">
+        <lat1>32.2978346</lat1>
+        <long1>-64.8494196</long1>
+    </object>
+    <object type="boundary point">
+        <lat1>32.3123073</lat1>
+        <long1>-64.8416519</long1>
+    </object>
+
+    <object type="wind direction">
+        <name>Wind direction</name>
+        <direction>SW</direction>
+    </object>
+    <object type="order">
+        <id>0</id>
+        <id>1</id>
+        <id>2</id>
+        <id>3</id>
+        <id>2</id>
+        <id>4</id>
+    </object>
+
+</Course>

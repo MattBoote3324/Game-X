@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="88.0" prefWidth="500.0" styleClass="topPane" stylesheets="@css/AgeOfSailing.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng302.Client.Controllers.TimerController">
+   <children>
+      <GridPane prefHeight="85.0" prefWidth="500.0">
+         <children>
+            <Label fx:id="lblRaceState" style="-fx-font-size: 12;" text="Race Status" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Label fx:id="lblRegattaName" style="-fx-font-size: 22;" text="Regatta Name" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System-Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblElapsedTime" style="-fx-font-size: 15;" text="Elapsed time" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" percentWidth="99.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" percentWidth="99.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="6.0" vgrow="NEVER" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="5.0" prefHeight="6.0" vgrow="NEVER" />
+         </rowConstraints>
+      </GridPane>
+      <Label fx:id="largeCountdownLabel" alignment="CENTER" layoutX="-2.0" layoutY="107.0" prefHeight="114.0" prefWidth="500.0" text="10" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

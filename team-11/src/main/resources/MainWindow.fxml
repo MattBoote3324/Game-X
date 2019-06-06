@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXNodesList?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1280.0" stylesheets="@css/RaceView.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng302.Client.Controllers.MainWindowController">
+    <center>
+        <GridPane fx:id="mainBorder" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="25.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="30.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" percentWidth="10.0" prefWidth="125.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" percentHeight="10.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" percentHeight="40.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" percentHeight="30.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" percentHeight="10.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" percentHeight="10.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+
+            <children>
+                <Pane fx:id="backgroundColourPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #004a74;" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647" />
+            <ImageView fx:id="backgroundImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647" />
+
+                <AnchorPane fx:id="raceViewAnchor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" GridPane.columnSpan="2147483647" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2147483647" GridPane.vgrow="ALWAYS">
+                    <children>
+                        <fx:include source="RaceView.fxml" />
+                    </children>
+                </AnchorPane>
+
+                <Pane fx:id="topPanePane" maxHeight="-Infinity" maxWidth="-Infinity" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER">
+                    <children>
+                        <fx:include source="TopDisplay.fxml" />
+                    </children>
+                </Pane>
+
+                <Pane fx:id="WindViewPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                    <children>
+                        <fx:include source="windDirection.fxml" />
+                    </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+                </Pane>
+
+                <AnchorPane GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
+                    <children>
+
+                        <JFXNodesList id="animated-option-button" fx:id="options" alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="5.0" />
+                        <HBox alignment="CENTER" layoutX="109.0" layoutY="637.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="90.0">
+                            <children>
+
+                                <Button fx:id="helpButton" focusTraversable="false" mnemonicParsing="false" onAction="#helpButtonPressed" prefHeight="50.0" prefWidth="50.0" styleClass="button-icon-annotation" text="?">
+                                    <font>
+                                        <Font name="System Bold" size="17.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                    on the fence
+                                </Button>
+                        <Button fx:id="muteButton" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#muteSounds" prefHeight="50.0" prefWidth="50.0" styleClass="button-icon-annotation">
+                           <graphic>
+                              <ImageView fx:id="soundIcon" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Button>
+                                <ImageView fx:id="q_img" fitHeight="70.0" fitWidth="70.0" layoutX="184.0" layoutY="637.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/q_icon.png" />
+                           </image>
+                                    <HBox.margin>
+                                        <Insets top="2.0" />
+                                    </HBox.margin>
+                        </ImageView>
+                                <ImageView fx:id="w_img" fitHeight="70.0" fitWidth="70.0" layoutX="109.0" layoutY="637.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/w_icon.png" />
+                           </image>
+                                    <HBox.margin>
+                                        <Insets top="2.0" />
+                                    </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label fx:id="placingText" layoutX="1184.0" layoutY="611.0" styleClass="placingText" text="-" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="50.0" />
+                  <Label fx:id="suffixText" layoutX="1214.0" layoutY="639.0" prefHeight="17.0" prefWidth="25.0" AnchorPane.bottomAnchor="80.0" AnchorPane.rightAnchor="30.0" />
+
+                    </children>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" />
+               </GridPane.margin>
+                </AnchorPane>
+            <ImageView fx:id="fadeImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647" />
+            <Button focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#leaveGame" prefHeight="30.0" prefWidth="30.0" styleClass="back_button" text="⬅" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+
+                <Pane fx:id="leaderboardPane" maxWidth="-Infinity" prefHeight="72.0" prefWidth="1.0">
+                    <children>
+                        <fx:include fx:id="leaderboard" source="Leaderboard.fxml" />
+                    </children>
+                </Pane>
+
+                <Pane fx:id="helpViewPane" onMouseClicked="#helpButtonPressed" opacity="0.6" style="-fx-background-color: black;" visible="false" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
+                    <children>
+                        <ImageView fx:id="keyboardLayout" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                             <image>
+                                <Image url="@images/controllerlayout.png" />
+                             </image>
+                        </ImageView>
+                  <Label text="Click anywhere to close">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                    </children>
+                </Pane>
+            <AnchorPane fx:id="finishingPane" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnSpan="2147483647" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2147483647" GridPane.vgrow="ALWAYS" />
+            </children>
+        </GridPane>
+    </center>
+</BorderPane>

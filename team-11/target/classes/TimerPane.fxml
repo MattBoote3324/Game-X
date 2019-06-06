@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="116.0" prefWidth="201.0" stylesheets="@css/AgeOfSailing.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng302.Client.Controllers.TimerController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="10.0" prefWidth="30.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="10.0" prefWidth="30.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="115.0" minHeight="32.0" prefHeight="32.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="98.0" minHeight="30.0" prefHeight="52.0" vgrow="NEVER" />
+      <RowConstraints maxHeight="98.0" minHeight="30.0" prefHeight="52.0" vgrow="NEVER" />
+      <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="NEVER" />
+   </rowConstraints>
+   <children>
+      <Label fx:id="timerTime" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+      <Label fx:id="timerTitle" text="Race Time" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label text="RaceVision" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="regattaTitle" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>

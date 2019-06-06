@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Course>
+    <version>1.0</version>
+
+    <object type="mark">
+        <name>Mark</name>
+        <id>0</id>
+        <latitude>32.293771</latitude>
+        <long>-64.855242</long>
+    </object>
+    <object type="mark">
+        <name>Mark2</name>
+        <id>1</id>
+        <latitude>32.293771</latitude>
+        <long>-64.8398495</long>
+    </object>
+    <object type="mark">
+        <name>Mark3</name>
+        <id>2</id>
+        <latitude>32.3023689</latitude>
+        <long>-64.8398495</long>
+    </object>
+    <object type="wind direction">
+        <name>Wind direction</name>
+        <direction>SW</direction>
+    </object>
+    <object type="order">
+        <id>0</id>
+        <id>1</id>
+        <id>2</id>
+    </object>
+
+</Course>

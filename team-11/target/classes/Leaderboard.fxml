@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="leaderboard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" visible="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng302.Client.Controllers.LeaderboardController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="520.0" minWidth="10.0" prefWidth="520.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="80.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="366.0" minHeight="10.0" prefHeight="363.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="193.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TableView fx:id="leaderboardTableView" disable="true" prefHeight="200.0" prefWidth="200.0" stylesheets="@css/Leaderboard.css" GridPane.columnSpan="2147483647">
+        <columns>
+          <TableColumn fx:id="positionColumn" prefWidth="104.0" text="Position" />
+          <TableColumn fx:id="nameColumn" prefWidth="354.0" text="Name" />
+            <TableColumn fx:id="speedColumn" prefWidth="141.0" text="Speed" />
+        </columns>
+      </TableView>
+   </children>
+</GridPane>

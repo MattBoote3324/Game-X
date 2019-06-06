@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Friz Quadrata TT";
+    src: url('FrizQuadrataTT.ttf');
+}
+
+.label, .text-input, .text-field, .button {
+    -fx-font-family: "Friz Quadrata TT";
+    -fx-text-fill: "#FFCC00";
+}
+
+/* These buttons should be 201x101 */
+.button {
+    -fx-background-image: url("../images/button.png");
+    -fx-background-size: cover;
+    -fx-font-size: 50px;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+/* These buttons should be 201x101 */
+.button:hover {
+    -fx-background-image: url("../images/button_hover.png");
+    -fx-background-size: cover;
+    -fx-font-size: 50px;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+/* These buttons should be 40x40 */
+.back_button {
+    -fx-background-image: url("../images/back_button.png");
+    -fx-background-size: cover;
+    -fx-font-size: 12px;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+/* These buttons should be 40x40 */
+.back_button:hover {
+    -fx-background-image: url("../images/back_button_hover.png");
+    -fx-background-size: cover;
+    -fx-font-size: 12px;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+/* These buttons can be any size */
+.no_image_button {
+    -fx-background-image: none;
+    -fx-background-color: linear-gradient(#000065, #00003A);
+    -fx-font-size: 12px;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.no_image_button:hover {
+    -fx-background-image: none;
+    -fx-background-color: linear-gradient(#00003A, #000065);
+    -fx-font-size: 12px;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.text-input, .text-input:selected {
+    /*-fx-background-image: none;*/
+    /*-fx-background-color: linear-gradient(#000065, #00003A);*/
+    /*-fx-font-size: 34px;*/
+}
+
+.table-view {
+    -fx-background-color: linear-gradient(#000065, #00003A);
+}
+
+.table-view .scroll-bar{
+    visibility: hidden;
+    -fx-opacity: 0%;
+}
+
+/* Table view cell formatting */
+.table-view .table-cell{
+    -fx-font-family: "Friz Quadrata TT";
+    -fx-font-size: 20px;
+    -fx-text-fill: "#FFCC00";
+}
+.table-row-cell{
+
+    -fx-table-cell-border-color: black;
+    -fx-alignment: center;
+}
+
+/* Remove the top header of the table */
+.column-header{
+    visibility: visible;
+    -fx-background-color: black;
+    /*-fx-padding: 1em;*/
+}
+
+.column-header-background{
+    visibility: visible;
+    -fx-padding: 0 0 0 0;
+
+}
+/* Fix scroll bar buttons arrows colors */
+.scroll-bar > .increment-button > .increment-arrow,
+.scroll-bar > .decrement-button > .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, rgb(220, 220, 220);
+}
+
+.scroll-bar > .increment-button:hover > .increment-arrow,
+.scroll-bar > .decrement-button:hover > .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, rgb(240, 240, 240);
+}
+
+.scroll-bar > .increment-button:pressed > .increment-arrow,
+.scroll-bar > .decrement-button:pressed > .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, rgb(255, 255, 255);
+}

@@ -1,0 +1,35 @@
+{
+  "characters": [
+        {
+          "name":"Zeus",
+          "image_location": "/characters/zeus/zeus.png"
+          "description": "Zeus, King of the Gods. God of the sky, lightning, thunder, law, order, and justice.\nYounger brother of Poseidon and Hades.\n\nSpecial W ability:\nStrike your opponents with blinding lightning, causing them to go into shock and lose all control of their boat's heading.\n\nQ Ability:\nZap your enemies with a bolt of lightning resetting them back to their previous Mark"
+        },
+        {
+          "name":"Poseidon",
+          "image_location": "/characters/poseidon/poseidon.png"
+          "description": "Poseidon, Protector of Seafarers. God of the sea, earthquakes, and horses.\nBrother of Zeus and Hades.\n\nSpecial W ability:\nConjure immense water spouts beneath your enemies boat's, holding them in place.\n\nQ Ability :\n Sink your enemies' boats with a torrent of water resetting them back to their previous Mark"
+        },
+        {
+          "name":"Aphrodite",
+          "image_location": "/characters/aphrodite/aphrodite.png"
+          "description": "Aphrodite, The Infinitely Desired. God of love, beauty, sexuality.\nDaughter of Zeus, sister of Ares.\n\nSpecial W ability:\nCause all opponents to become insanely attracted and drawn to the boat in last place, who will be unable to move.\n\nQ Ability:\n Smitten your enemies by applying a kiss of death on the crew resetting them back to their previous Mark"
+        },
+         {
+          "name":"Ares",
+          "image_location": "/characters/ares/ares.png"
+          "description": "Ares, The Violent. God of War.\nSon of Zeus, brother of Aphrodite.\n\nSpecial W ability:\nSummon a circle of fiery rage around you, giving you the power to sail into the wind with great speed. Any opponent who enters your inferno will be set back a leg in the race.\n\nQ Ability:\n Burn your enemies' ships with a stream of fire resetting them back to their previous Mark"
+        },
+        {
+          "name":"Hades",
+          "image_location": "/characters/hades/hades.png"
+          "description": "Hades, The Unseen One. God of death and the underworld.\nBrother of Zeus and Poseidon.\n\nSpecial W ability:\nCast your opponents into the dark underworld, flipping their sense of reality, confusing them. \n\nQ Ability:\n Haunt your enemies' boats by releasing skeletons scaring them back to their previous Mark"
+        }
+    ],
+  "default": [
+        {
+          "name": "Unknown",
+          "image_location": "/characters/default/unknown.jpg"
+        }
+    ]
+}

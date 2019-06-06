@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Race>
+    <CreationTimeDate>2015-08-29T13:12:40+02:00</CreationTimeDate>
+    <RaceStartTime Start="2015-08-29T13:10:00+02:00" Postpone="False" />
+    <RaceID>15082901</RaceID>
+    <RaceType>Fleet</RaceType>
+    <Participants>
+        <Yacht SourceID="1" />
+    </Participants>
+    <Course>
+        <CompoundMark CompoundMarkID="1" Name="StartLine">
+            <Mark SeqID="1" Name="StartLine1" TargetLat="1" TargetLng="1" SourceID="122" />
+            <Mark SeqID="2" Name="StartLine2" TargetLat="1" TargetLng="2" SourceID="123" />
+        </CompoundMark>
+        <CompoundMark CompoundMarkID="2" Name="Mark1">
+            <Mark SeqID="1" Name="Mark1" TargetLat="6" TargetLng="6" SourceID="131" />
+        </CompoundMark>
+        <CompoundMark CompoundMarkID="3" Name="FinishLine">
+            <Mark SeqID="1" Name="FinishLine1" TargetLat="11" TargetLng="11" SourceID="128" />
+            <Mark SeqID="2" Name="FinishLine2" TargetLat="10" TargetLng="11" SourceID="129" />
+        </CompoundMark>
+    </Course>
+    <CompoundMarkSequence>
+        <Corner SeqID="1" CompoundMarkID="1" Rounding="PS" ZoneSize="3" />
+        <Corner SeqID="2" CompoundMarkID="2" Rounding="Port" ZoneSize="3" />
+        <Corner SeqID="3" CompoundMarkID="3" Rounding="SP" ZoneSize="3" />
+    </CompoundMarkSequence>
+    <CourseLimit>
+        <Limit SeqID="1" Lat="0" Lon="0" />
+        <Limit SeqID="2" Lat="0" Lon="12" />
+        <Limit SeqID="3" Lat="12" Lon="12" />
+        <Limit SeqID="4" Lat="12" Lon="0" />
+    </CourseLimit>
+</Race>

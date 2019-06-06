@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RegattaConfig>
+  <RegattaID>27</RegattaID>
+  <RegattaName>New York World Series 2016</RegattaName>
+  <CourseName>New York</CourseName>
+  <CentralLatitude>40.708</CentralLatitude>
+  <CentralLongitude>-74.035</CentralLongitude>
+  <CentralAltitude>0.00</CentralAltitude>
+  <UtcOffset>-4</UtcOffset>
+  <MagneticVariation>-12.9</MagneticVariation>
+  <ShorelineName>newyork_shoreline</ShorelineName>
+</RegattaConfig>

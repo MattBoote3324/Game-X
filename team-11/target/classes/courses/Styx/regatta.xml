@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RegattaConfig>
+  <RegattaID>30</RegattaID>
+  <RegattaName>Toulon World Series 2016</RegattaName>
+  <CourseName>Toulon</CourseName>
+  <CentralLatitude>43.08378</CentralLatitude>
+  <CentralLongitude>5.935451</CentralLongitude>
+  <CentralAltitude>0.00</CentralAltitude>
+  <UtcOffset>2</UtcOffset>
+  <MagneticVariation>1.6</MagneticVariation>
+  <ShorelineName>toulon_shoreline</ShorelineName>
+</RegattaConfig>
